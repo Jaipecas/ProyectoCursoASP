@@ -15,7 +15,6 @@ namespace Persistencia
         {
 
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CursoInstructor>().HasKey(ci => new { ci.cursoId, ci.instructorId });

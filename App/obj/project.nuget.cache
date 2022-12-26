@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "avwJbOumZT29mHFmvOXbQ3uJZD7HX9/fmCrKxOY+bm83c5PlDDyRDG1MTlSzlia7euTB8XJ6L8j+xBBzzT81Tg==",
+  "dgSpecHash": "MK3M7/WKDGR9k+SnQKmbzCKmzlaymlmqihWXfRv89bylIYaeczC2DujWPoTEhYG6fzFswXObiaglx/csoCqT3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
