@@ -81,3 +81,6 @@ C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\MediatR.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

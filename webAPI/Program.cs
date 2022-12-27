@@ -1,4 +1,5 @@
 using App.Cursos;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
@@ -14,7 +15,8 @@ builder.Services.AddDbContext<CursosOnlineContext>(opt =>
 
 builder.Services.AddMediatR(typeof(Consulta.Manejador).Assembly);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(cfr => cfr.RegisterValidatorsFromAssemblyContaining<CreaCurso>());
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

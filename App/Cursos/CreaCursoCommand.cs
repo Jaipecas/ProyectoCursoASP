@@ -1,4 +1,5 @@
 ﻿using Dominio;
+using FluentValidation;
 using MediatR;
 using Persistencia;
 
@@ -9,6 +10,14 @@ namespace App.Cursos
         public string? titulo { get; set; }
         public string? descripcion { get; set; }
         public DateTime fechaPublicacion { get; set; }
+    }
+
+    public class ValidacionTitulo : AbstractValidator<CreaCurso>
+    {
+        public ValidacionTitulo()
+        {
+            RuleFor(x => x.titulo).NotEmpty();
+        }
     }
 
     public class HandlerCreaCurso : IRequestHandler<CreaCurso>
