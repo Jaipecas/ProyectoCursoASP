@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
-   
+
     [Route("api/Cursos")]
     [ApiController]
     public class CursosController : ControllerBase
@@ -20,5 +20,17 @@ namespace WebAPI.Controllers
         // http://localhost:5115/api/Cursos/1
         [HttpGet("{id}")]
         public async Task<ActionResult<Curso>> Detalle(int id) => await _mediator.Send(new ConsultaId.CursoUnico { Id = id });
+
+        // http://localhost:5115/api/Cursos/
+        [HttpPost]
+        public async Task<ActionResult<Unit>> CreaCurso(CreaCurso data) => await _mediator.Send(data);
+
+        // http://localhost:5115/api/Cursos/3
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Unit>> UpdateCurso(int id, UpdateCursoCommand data) => await _mediator.Send(new UpdateCursoCommand { cursoId = id });
+
+        // http://localhost:5115/api/Cursos/3
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Unit>> DeleteCurso(int id) => await _mediator.Send(new DeleteCursoCommand { cursoId = id });
     }
 }
