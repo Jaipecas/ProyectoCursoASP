@@ -15,15 +15,8 @@ namespace App.Cursos
         public class Manejador : IRequestHandler<CursoUnico, Curso>
         {
             private readonly CursosOnlineContext _context;
-            public Manejador (CursosOnlineContext context)
-            {
-                _context = context;
-            }
-            public async Task<Curso> Handle(CursoUnico request, CancellationToken cancellationToken)
-            {
-                var curso = await _context.Curso.FindAsync(request.Id);
-                return curso;
-            }
+            public Manejador(CursosOnlineContext context) => _context = context;
+            public async Task<Curso> Handle(CursoUnico request, CancellationToken cancellationToken) => await _context.Curso.FindAsync(request.Id);
         }
     }
 }
