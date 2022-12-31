@@ -12,6 +12,10 @@
     <ProjectReference Include="..\Persistencia\Persistencia.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ErrorHandler\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

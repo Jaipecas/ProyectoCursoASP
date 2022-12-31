@@ -3,6 +3,7 @@ using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
+using WebAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//Usamos nuestro middleware personalizado
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 //app.UseHttpsRedirection();
 

@@ -1,4 +1,5 @@
 ﻿
+using App.ErrorHandler;
 using Dominio;
 using MediatR;
 using Persistencia;
@@ -16,7 +17,14 @@ namespace App.Cursos
         {
             private readonly CursosOnlineContext _context;
             public Manejador(CursosOnlineContext context) => _context = context;
-            public async Task<Curso> Handle(CursoUnico request, CancellationToken cancellationToken) => await _context.Curso.FindAsync(request.Id);
+            public async Task<Curso> Handle(CursoUnico request, CancellationToken cancellationToken)
+            {
+                Curso? curso = await _context.Curso.FindAsync(request.Id);
+
+                if (curso == null) throw new NotFoundException("CURSO");
+
+                return curso;
+            }
         }
     }
 }

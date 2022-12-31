@@ -1,9 +1,11 @@
-﻿using Dominio;
+﻿using App.ErrorHandler;
+using Dominio;
 using MediatR;
 using Persistencia;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,7 +30,7 @@ namespace App.Cursos
             Curso? curso = await _context.Curso.FindAsync(request.cursoId);
             int changes;
 
-            if (curso == null) throw new Exception("EL CURSO NO EXISTE");
+            if (curso == null) throw new NotFoundException("CURSO");
 
             _context.Remove(curso);
 

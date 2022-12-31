@@ -9,14 +9,16 @@ namespace App.Cursos
     {
         public string? titulo { get; set; }
         public string? descripcion { get; set; }
-        public DateTime fechaPublicacion { get; set; }
+        public DateTime? fechaPublicacion { get; set; }
     }
 
-    public class ValidacionTitulo : AbstractValidator<CreaCurso>
+    public class CrearCursoValidations : AbstractValidator<CreaCurso>
     {
-        public ValidacionTitulo()
+        public CrearCursoValidations()
         {
             RuleFor(x => x.titulo).NotEmpty();
+            RuleFor(x => x.descripcion).NotEmpty();
+            RuleFor(x => x.fechaPublicacion).NotEmpty();
         }
     }
 

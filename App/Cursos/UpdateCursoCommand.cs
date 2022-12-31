@@ -1,5 +1,7 @@
 ﻿
+using App.ErrorHandler;
 using Dominio;
+using FluentValidation;
 using MediatR;
 using Persistencia;
 
@@ -11,6 +13,16 @@ namespace App.Cursos
         public string? titulo { get; set; }
         public string? descripcion { get; set; }
         public DateTime? fechaPublicacion { get; set; }
+    }
+
+    public class UpdateCursoCommandValidations : AbstractValidator<UpdateCursoCommand>
+    {
+        public UpdateCursoCommandValidations()
+        {
+            RuleFor(x => x.titulo).NotEmpty();
+            RuleFor(x => x.descripcion).NotEmpty();
+            RuleFor(x => x.fechaPublicacion).NotEmpty();
+        }
     }
 
     public class UpdateCursoCommandHandler : IRequestHandler<UpdateCursoCommand>
@@ -27,7 +39,7 @@ namespace App.Cursos
             Curso? curso = await _context.Curso.FindAsync(request.cursoId);
             int changes = 0;
 
-            if (curso == null) throw new Exception("EL CURSO " + request.cursoId + " NO EXSITE");
+            if (curso == null) throw new NotFoundException("CURSO");
 
             curso.titulo = request.titulo ?? curso.titulo;
             curso.descripcion = request.descripcion ?? curso.descripcion;
