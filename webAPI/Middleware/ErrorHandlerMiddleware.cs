@@ -38,6 +38,11 @@ namespace WebAPI.Middleware
                     errores = handler.Errores;
                     httpContext.Response.StatusCode = (int)NotFoundException.StatusCode;
                     break;
+                case UnauthorizedException handler:
+                    logger.LogError(exception, "Manejador error");
+                    errores = handler.Errores;
+                    httpContext.Response.StatusCode = (int)UnauthorizedException.StatusCode;
+                    break;
                 case Exception ex:
                     logger.LogError(ex, "Error Servidor");
                     errores = string.IsNullOrWhiteSpace(ex.Message) ? "Error" : ex.Message;
