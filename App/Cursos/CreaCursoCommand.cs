@@ -18,7 +18,6 @@ namespace App.Cursos
         {
             RuleFor(x => x.titulo).NotEmpty();
             RuleFor(x => x.descripcion).NotEmpty();
-            RuleFor(x => x.fechaPublicacion).NotEmpty();
         }
     }
 
