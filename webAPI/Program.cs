@@ -1,12 +1,20 @@
 using App.Cursos;
+using App.Interfaces;
 using Dominio;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.IdentityModel.Tokens;
 using Persistencia;
+using Seguridad;
+using Seguridad.Token;
+using System.Text;
 using WebAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +27,13 @@ builder.Services.AddDbContext<CursosOnlineContext>(opt =>
 });
 
 builder.Services.AddMediatR(typeof(Consulta.Manejador).Assembly);
-builder.Services.AddControllers().AddFluentValidation(cfr => cfr.RegisterValidatorsFromAssemblyContaining<CreaCurso>());
+builder.Services.AddControllers(opt =>
+{
+    // Se añade a los controllers que el usuario tenga que estar autenticado para realizar la llamada
+    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+    opt.Filters.Add(new AuthorizeFilter(policy));
+})
+    .AddFluentValidation(cfr => cfr.RegisterValidatorsFromAssemblyContaining<CreaCurso>());
 
 //configuración core Identity
 var builderIdentity = builder.Services.AddIdentityCore<Usuario>();
@@ -29,6 +43,23 @@ identuty.AddEntityFrameworkStores<CursosOnlineContext>();
 //LOGIN
 identuty.AddSignInManager<SignInManager<Usuario>>();
 builder.Services.TryAddSingleton<ISystemClock, SystemClock>();
+
+//TOKEN
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+    opt.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = key,
+        ValidateAudience = false,
+        ValidateIssuer = false
+    };
+});
+builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
+
+//interfaz y clase para manejar la la sesion de usuario
+builder.Services.AddScoped<IUserSession, UserSession>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -40,18 +71,18 @@ var app = builder.Build();
 using (var ambiente = app.Services.CreateScope())
 {
     var services = ambiente.ServiceProvider;
-	try
-	{
+    try
+    {
         var userManager = services.GetRequiredService<UserManager<Usuario>>();
         var context = services.GetRequiredService<CursosOnlineContext>();
         context.Database.Migrate();
         DataPrueba.insertarData(context, userManager).Wait();
     }
-	catch (Exception e)
-	{
+    catch (Exception e)
+    {
         var logging = services.GetRequiredService<ILogger<Program>>();
         logging.LogError(e, "ERROR EN MIGRACION");
-	}
+    }
 }
 
 // Configure the HTTP request pipeline.
@@ -65,6 +96,7 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
 //app.UseHttpsRedirection();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

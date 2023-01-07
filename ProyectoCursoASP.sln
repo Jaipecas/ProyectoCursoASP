@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{14972ECD-039B-4618-8E0A-0B1EE2DAEAEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Dominio\Dominio.csproj", "{14972ECD-039B-4618-8E0A-0B1EE2DAEAEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{47B4A3B6-DD18-4D66-AD88-40B32FA207C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistencia", "Persistencia\Persistencia.csproj", "{47B4A3B6-DD18-4D66-AD88-40B32FA207C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{A9EBB8AB-0F5C-460A-98F3-F1355F0D98B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App.csproj", "{A9EBB8AB-0F5C-460A-98F3-F1355F0D98B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "webAPI\WebAPI.csproj", "{ED3FC6DD-4993-413A-B419-BE44AFCDE98D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "webAPI\WebAPI.csproj", "{ED3FC6DD-4993-413A-B419-BE44AFCDE98D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguridad", "Seguridad\Seguridad.csproj", "{9E410B10-5EDF-41D7-B91D-E6B69F760CAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{ED3FC6DD-4993-413A-B419-BE44AFCDE98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED3FC6DD-4993-413A-B419-BE44AFCDE98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED3FC6DD-4993-413A-B419-BE44AFCDE98D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E410B10-5EDF-41D7-B91D-E6B69F760CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E410B10-5EDF-41D7-B91D-E6B69F760CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E410B10-5EDF-41D7-B91D-E6B69F760CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E410B10-5EDF-41D7-B91D-E6B69F760CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

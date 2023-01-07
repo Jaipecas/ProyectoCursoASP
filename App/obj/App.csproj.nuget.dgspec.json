@@ -201,11 +201,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Arch.EntityFrameworkCore.Design": {
-              "target": "Package",
-              "version": "[2.1.15, )"
-            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.1, )"
             },

@@ -1,6 +1,6 @@
 ﻿
-using App.Cursos;
 using App.ErrorHandler;
+using App.Interfaces;
 using Dominio;
 using FluentValidation;
 using MediatR;
@@ -10,8 +10,8 @@ namespace App.Seguridad
 {
     public class Login : IRequest<UserData>
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public string? Email { get; set; }
+        public string? Password { get; set; }
     }
 
     public class LoginValidations : AbstractValidator<Login>
@@ -27,21 +27,20 @@ namespace App.Seguridad
     {
         private readonly UserManager<Usuario> _userManger;
         private readonly SignInManager<Usuario> _signInManger;
+        private readonly IJwtGenerator _jwtGenerator;
 
-        public LoginHandler(UserManager<Usuario> userManger, SignInManager<Usuario> signInManger)
+        public LoginHandler(UserManager<Usuario> userManger, SignInManager<Usuario> signInManger, IJwtGenerator jwtGenerator)
         {
             _userManger = userManger;
             _signInManger = signInManger;
+            _jwtGenerator = jwtGenerator;
         }
 
         public async Task<UserData> Handle(Login request, CancellationToken cancellationToken)
         {
             var usuario = await _userManger.FindByEmailAsync(request.Email);
 
-            if (usuario == null)
-            {
-                throw new NotFoundException("USUARIO");
-            }
+            if (usuario == null) throw new NotFoundException("USUARIO");         
 
             var result = await _signInManger.CheckPasswordSignInAsync(usuario, request.Password, false);
 
@@ -50,7 +49,7 @@ namespace App.Seguridad
                 return new UserData
                 {
                     NombreCompleto = usuario.NombreCompleto,
-                    Token = "AUN NO HEMOS IMPLEMENTADO LA LOGICA DEL TOKEN",
+                    Token = _jwtGenerator.GenerateToken(usuario),
                     Username = usuario.UserName,
                     Email = usuario.Email,
                     Imagen = null
