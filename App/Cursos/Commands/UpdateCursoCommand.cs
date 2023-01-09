@@ -1,11 +1,10 @@
-﻿
-using App.ErrorHandler;
+﻿using App.ErrorHandler;
 using Dominio;
 using FluentValidation;
 using MediatR;
 using Persistencia;
 
-namespace App.Cursos
+namespace App.Cursos.Commands
 {
     public class UpdateCursoCommand : IRequest
     {
@@ -29,7 +28,7 @@ namespace App.Cursos
     {
         private readonly CursosOnlineContext _context;
 
-        public UpdateCursoCommandHandler (CursosOnlineContext context)
+        public UpdateCursoCommandHandler(CursosOnlineContext context)
         {
             _context = context;
         }

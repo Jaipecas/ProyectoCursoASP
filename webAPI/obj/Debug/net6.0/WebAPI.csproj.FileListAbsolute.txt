@@ -100,3 +100,5 @@ C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\Seguridad.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\Seguridad.pdb
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\webAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

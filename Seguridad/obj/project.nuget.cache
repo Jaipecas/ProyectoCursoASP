@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+AuW5n8r0Gd+sE9Vrd+QU3B9/tfEkBSgj9VA7zYfnCpYvJczgya+dDdHlCWmby+1zjmVXvpkoayP9y+WyH4jCw==",
+  "dgSpecHash": "FoDMVw6tNkPkWVX7FfWsHtiet+SyaDNaWeOn2Vf9xJK94aVSxJiC3Yg+w2DbYlXpy/FhgjEpKmiGMFsN+1iUGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jaipe\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
@@ -30,7 +32,7 @@
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.12.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",

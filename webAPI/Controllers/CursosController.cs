@@ -1,7 +1,7 @@
-﻿using App.Cursos;
-using Dominio;
+﻿using App.Cursos.Commands;
+using App.Cursos.DTO;
+using App.Cursos.Queries;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -11,11 +11,11 @@ namespace WebAPI.Controllers
     {
         // http://localhost:5115/api/Cursos
         [HttpGet]
-        public async Task<ActionResult<List<Curso>>> Get() => await Mediator.Send(new Consulta.ListaCursos());
+        public async Task<ActionResult<List<CursoDTO>>> Get() => await Mediator.Send(new GetCursosQuery());
 
         // http://localhost:5115/api/Cursos/1
         [HttpGet("{id}")]
-        public async Task<ActionResult<Curso>> Detalle(int id) => await Mediator.Send(new ConsultaId.CursoUnico { Id = id });
+        public async Task<ActionResult<CursoDTO>> Detalle(Guid id) => await Mediator.Send(new GetCursoQuery{ Id = id });
 
         // http://localhost:5115/api/Cursos/
         [HttpPost]

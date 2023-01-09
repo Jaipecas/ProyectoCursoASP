@@ -3,7 +3,7 @@ using FluentValidation;
 using MediatR;
 using Persistencia;
 
-namespace App.Cursos
+namespace App.Cursos.Commands
 {
     public class CreaCurso : IRequest
     {
@@ -56,7 +56,7 @@ namespace App.Cursos
                     _context.cursoInstructor.Add(cursoInstructor);
                 });
             }
-    
+
             changes = await _context.SaveChangesAsync();
 
             if (changes > 0) return Unit.Value;

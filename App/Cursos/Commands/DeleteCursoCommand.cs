@@ -9,7 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Cursos
+namespace App.Cursos.Commands
 {
     public class DeleteCursoCommand : IRequest
     {

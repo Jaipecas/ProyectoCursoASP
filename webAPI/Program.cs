@@ -1,4 +1,5 @@
-using App.Cursos;
+using App.Cursos.Commands;
+using App.Cursos.Queries;
 using App.Interfaces;
 using Dominio;
 using FluentValidation.AspNetCore;
@@ -26,7 +27,8 @@ builder.Services.AddDbContext<CursosOnlineContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddMediatR(typeof(Consulta.Manejador).Assembly);
+builder.Services.AddMediatR(typeof(GetCursosQueryHandler).Assembly);
+
 builder.Services.AddControllers(opt =>
 {
     // Se añade a los controllers que el usuario tenga que estar autenticado para realizar la llamada
@@ -61,9 +63,15 @@ builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
 //interfaz y clase para manejar la la sesion de usuario
 builder.Services.AddScoped<IUserSession, UserSession>();
 
+//MAPEADO DE CLASES DTO
+builder.Services.AddAutoMapper(typeof(GetCursosQueryHandler));
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+
 
 var app = builder.Build();
 
