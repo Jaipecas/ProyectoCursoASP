@@ -1,4 +1,5 @@
-﻿using Dominio;
+﻿using Azure.Core;
+using Dominio;
 using FluentValidation;
 using MediatR;
 using Persistencia;
@@ -11,6 +12,7 @@ namespace App.Cursos.Commands
         public string? descripcion { get; set; }
         public DateTime? fechaPublicacion { get; set; }
         public List<Guid> instructores { get; set; }
+        public Precio precio { get; set; }
     }
 
     public class CrearCursoValidations : AbstractValidator<CreaCurso>
@@ -31,9 +33,20 @@ namespace App.Cursos.Commands
         }
         public async Task<Unit> Handle(CreaCurso request, CancellationToken cancellationToken)
         {
-            int changes;
-            Guid cursoId = new Guid();
+            var curso = AddCurso(request);
+            AddInstructoresCurso(request, curso);
+            AddPrecioCurso(request, curso);
 
+            var changes = await _context.SaveChangesAsync();
+
+            if (changes > 0) return Unit.Value;
+
+            throw new Exception("NO SE HA CREADO EL CURSO");
+        }
+
+        private Curso AddCurso(CreaCurso request)
+        {
+            Guid cursoId = new Guid();
             Curso curso = new()
             {
                 cursoId = cursoId,
@@ -43,25 +56,36 @@ namespace App.Cursos.Commands
             };
 
             _context.Curso.Add(curso);
+            return curso;
+        }
 
-            if (request.instructores != null)
+        private void AddInstructoresCurso(CreaCurso request, Curso curso)
+        {
+            if (request.instructores == null) return;
+
+            request.instructores.ForEach(instructorId =>
             {
-                request.instructores.ForEach(instructorId =>
+                var cursoInstructor = new CursoInstructor
                 {
-                    var cursoInstructor = new CursoInstructor
-                    {
-                        cursoId = curso.cursoId,
-                        instructorId = instructorId
-                    };
-                    _context.cursoInstructor.Add(cursoInstructor);
-                });
-            }
+                    cursoId = curso.cursoId,
+                    instructorId = instructorId
+                };
+                _context.cursoInstructor.Add(cursoInstructor);
+            });
 
-            changes = await _context.SaveChangesAsync();
+        }
 
-            if (changes > 0) return Unit.Value;
+        private void AddPrecioCurso(CreaCurso request, Curso curso)
+        {
+            Precio precioCurso = new()
+            {
+                precioId = new Guid(),
+                precioActual = request.precio.precioActual,
+                promocion = request.precio.promocion,
+                cursoId = curso.cursoId
+            };
 
-            throw new Exception("NO SE HA CREADO EL CURSO");
+            _context.Precio.Add(precioCurso);
         }
     }
 }

@@ -23,10 +23,13 @@ namespace WebAPI.Controllers
 
         // http://localhost:5115/api/Cursos/3
         [HttpPut("{id}")]
-        public async Task<ActionResult<Unit>> UpdateCurso(int id, UpdateCursoCommand data) => await Mediator.Send(new UpdateCursoCommand { cursoId = id });
+        public async Task<ActionResult<Unit>> UpdateCurso(Guid id, UpdateCursoCommand data) {
+            data.cursoId = id;
+            return await Mediator.Send(data);
+        } 
 
         // http://localhost:5115/api/Cursos/3
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Unit>> DeleteCurso(int id) => await Mediator.Send(new DeleteCursoCommand { cursoId = id });
+        public async Task<ActionResult<Unit>> DeleteCurso(Guid id) => await Mediator.Send(new DeleteCursoCommand { cursoId = id });
     }
 }

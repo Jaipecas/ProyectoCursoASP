@@ -1,6 +1,7 @@
 ﻿using App.ErrorHandler;
 using Dominio;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Persistencia;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace App.Cursos.Commands
 {
     public class DeleteCursoCommand : IRequest
     {
-        public int cursoId { get; set; }
+        public Guid cursoId { get; set; }
     }
 
     public class DeleteCursoCommandHandler : IRequestHandler<DeleteCursoCommand>
@@ -27,14 +28,27 @@ namespace App.Cursos.Commands
 
         public async Task<Unit> Handle(DeleteCursoCommand request, CancellationToken cancellationToken)
         {
-            Curso? curso = await _context.Curso.FindAsync(request.cursoId);
-            int changes;
+            /* Eliminar los datos de la tabla intermedia (ni el registro de la tabla precio, ni los comentario) en realidad no hace falta ya que tenemos CONSTRAINT ON DELETE CASCADE
+             * pero lo dejamoe a modo de ejemplo */
+
+            var cursoTask = _context.Curso.Where(curso => curso.cursoId == request.cursoId).FirstOrDefaultAsync();
+            var cursosIntructoresTask = _context.cursoInstructor.Where(cursoInstructor => cursoInstructor.cursoId == request.cursoId).ToListAsync();
+
+            await Task.WhenAll(cursoTask, cursosIntructoresTask);
+
+            var curso = await cursoTask;
+            var cursosIntructores = await cursosIntructoresTask;
+
+            if (cursosIntructores != null && cursosIntructores.Count > 0)
+            {
+                cursosIntructores.ForEach(cursosIntructores => _context.cursoInstructor.Remove(cursosIntructores));
+            }
 
             if (curso == null) throw new NotFoundException("CURSO");
 
             _context.Remove(curso);
 
-            changes = await _context.SaveChangesAsync();
+            var changes = await _context.SaveChangesAsync();
 
             if (changes > 0) return Unit.Value;
 

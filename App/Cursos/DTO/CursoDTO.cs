@@ -8,5 +8,7 @@
         public DateTime? fechaPublicacion { get; set; }
         public byte[]? fotoPortada { get; set; }
         public ICollection<InstructorDTO> instructors { get; set; }
+        public PrecioDTO Precio { get; set; }
+        public ICollection<ComentarioDTO> comentarios { get; set; }
     }
 }

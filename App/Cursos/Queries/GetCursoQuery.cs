@@ -28,6 +28,8 @@ namespace App.Cursos.Queries
             var curso = await _context.Curso
                 .Include(curso => curso.CursoInstructors)
                 .ThenInclude(cursoInstructor => cursoInstructor.Instructor)
+                .Include(curso => curso.precio)
+                .Include(curso => curso.Comentarios)
                 .FirstOrDefaultAsync(curso => curso.cursoId == request.Id);
 
             if (curso == null) throw new NotFoundException("CURSO");

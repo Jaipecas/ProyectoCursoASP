@@ -23,8 +23,10 @@ namespace App.Cursos.Queries
         public async Task<List<CursoDTO>> Handle(GetCursosQuery request, CancellationToken cancellationToken)
         {
             var cursos = await _context.Curso
-                .Include(x => x.CursoInstructors)
-                .ThenInclude(x => x.Instructor)
+                .Include(curso => curso.CursoInstructors)
+                .ThenInclude(cursoInstructor => cursoInstructor.Instructor)
+                .Include(curso => curso.precio)
+                .Include(curso => curso.Comentarios)
                 .ToListAsync();
 
             var cursosDTO = _mapper.Map<List<Curso>, List<CursoDTO>>(cursos);
