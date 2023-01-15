@@ -11,9 +11,9 @@ namespace Dominio
     {
         public Guid precioId { get; set; }
         [Column(TypeName = "decimal(18,2)")]
-        public decimal precioActual { get; set; }
+        public decimal? precioActual { get; set; }
         [Column(TypeName = "decimal(18,2)")]
-        public decimal promocion { get; set; }
+        public decimal? promocion { get; set; }
         public Guid cursoId { get; set; }
         public Curso? curso { get; set; }
 

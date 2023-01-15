@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pLRfcDGbBZBbQOAwvpK90iImbbUz+GTpLJf51RbkmwJETOqCXrXHcSrUnlrEJwCZZAVdlSiQib/nPDS2+5AFCA==",
+  "dgSpecHash": "Sk/6OID7zx3XJSQnqyc1mVeDFIqkpw64Ya5gxgoeCO/sSLQYHxJ1MZ8wV3a/WR2M/ORbPxAK7HotKS0gkN0MjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

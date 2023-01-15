@@ -14,7 +14,7 @@ namespace Dominio
         public DateTime? fechaPublicacion { get; set; }
         public byte[]? fotoPortada { get; set; }
         public Precio? precio { get; set; }
-        public ICollection<Comentario>? Comentarios { get; set; }
-        public ICollection<CursoInstructor>? CursoInstructors { get; set; }
+        public ICollection<Comentario> Comentarios { get; set; }
+        public ICollection<CursoInstructor> CursoInstructors { get; set; }
     }
 }

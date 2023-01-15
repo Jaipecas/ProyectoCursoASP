@@ -10,3 +10,15 @@ C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Dominio\obj\Debug
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Dominio\obj\Debug\net6.0\refint\Dominio.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.pdb
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Dominio\obj\Debug\net6.0\ref\Dominio.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\bin\Debug\net6.0\Dominio.deps.json
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\bin\Debug\net6.0\Dominio.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\bin\Debug\net6.0\Dominio.pdb
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.AssemblyInfo.cs
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\refint\Dominio.dll
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\Dominio.pdb
+C:\Users\jaipe\Documents\VisualStudioProjects\CopiaProyectoCursoASP\ProyectoCursoASP\Dominio\obj\Debug\net6.0\ref\Dominio.dll
