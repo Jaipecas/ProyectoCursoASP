@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using Persistencia;
+using Persistencia.DapperConnection;
 using Seguridad;
 using Seguridad.Token;
 using System.Text;
@@ -26,6 +27,10 @@ builder.Services.AddDbContext<CursosOnlineContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+// Conexion Dapper para manejar los procedimientos almacenados
+builder.Services.Configure<ConnectionConf>(builder.Configuration.GetSection("DefaultConnection"));
+
 
 builder.Services.AddMediatR(typeof(GetCursosQueryHandler).Assembly);
 

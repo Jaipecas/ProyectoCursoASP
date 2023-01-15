@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ySAHtAo9C6bePRXOYfTSjc2Ombj6mdKjgIAfOhp4OTKFoSUmYQNGVEbenKHef05L0cWSU5DlKG6dTWblq35wRA==",
+  "dgSpecHash": "VRMkVOinzCuStrAcchQvEKc5QY9pLj/dYsYeJ76DFoAPy9Qe9t6LmDQ47mwparIQ2TqOdCnehU/vbvHBw/QEPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\jaipe\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\jaipe\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
