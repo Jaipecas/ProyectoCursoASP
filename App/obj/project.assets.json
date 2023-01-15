@@ -4313,11 +4313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj",
+      "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj",
       "projectName": "App",
-      "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj",
+      "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj",
       "packagesPath": "C:\\Users\\jaipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\obj\\",
+      "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4338,11 +4338,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj"
+            "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj"
+            "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj"
             }
           }
         }

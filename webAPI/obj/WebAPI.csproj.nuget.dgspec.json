@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\WebAPI.csproj": {}
+    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\webAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj": {
+    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj",
+        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj",
         "projectName": "App",
-        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj",
+        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj",
         "packagesPath": "C:\\Users\\jaipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\obj\\",
+        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj"
+              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\jaipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -157,14 +157,14 @@
         }
       }
     },
-    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\jaipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Persistencia\\obj\\",
+        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -185,8 +185,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj"
+              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -242,14 +242,14 @@
         }
       }
     },
-    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj": {
+    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
+        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
         "projectName": "Seguridad",
-        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
+        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
         "packagesPath": "C:\\Users\\jaipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\obj\\",
+        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -270,8 +270,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj": {
-                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj"
+              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj": {
+                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj"
               }
             }
           }
@@ -311,14 +311,14 @@
         }
       }
     },
-    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\WebAPI.csproj": {
+    "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\webAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\jaipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\obj\\",
+        "outputPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -339,11 +339,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj": {
-                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj"
+              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj": {
+                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj"
               },
-              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj": {
-                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj"
+              "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj": {
+                "projectPath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj"
               }
             }
           }

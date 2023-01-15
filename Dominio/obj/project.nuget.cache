@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JGpbjBpvOubcnH60LiRzIOG1YB93JZOxKm6gD7w5iU5MTJUUF192uOe9tDeW0FSrE9mFPuHBnkRBLSN4l9UUaA==",
+  "dgSpecHash": "ctiQfYISYonphCNDfE1AITEEWoyFyM2Mu3gO7EOboTChHEUs0dplTtIGziTDUrg8iqD37copSc32+QHYXsbTPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

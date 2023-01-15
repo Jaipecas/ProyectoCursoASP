@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pLQZedHwTp14EFlG1sEGOWZA610wohMOVTl+M8QAzX7f2GiqeuPNKZKJ5z+4J2/G9jTHT87CojWs8D2XER+ljQ==",
+  "dgSpecHash": "OQ7JhL3KSeHmpeRcImLbQOm49KTsLmjy/E6GU54NamLSK72X9PwFOl4TAr+uT1djG9iF6c/lYw+KHBJR2tLhGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\App\\App.csproj",
+  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

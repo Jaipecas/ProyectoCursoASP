@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+AuW5n8r0Gd+sE9Vrd+QU3B9/tfEkBSgj9VA7zYfnCpYvJczgya+dDdHlCWmby+1zjmVXvpkoayP9y+WyH4jCw==",
+  "dgSpecHash": "kXtbO4MW0so0VoE58hGJPAPf+vOjhVzdZ6qMmmA6vg1YaNdp3rTNprvcJmpHtAenKTBRmM50sohAweJtx4sUGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
+  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\Seguridad\\Seguridad.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

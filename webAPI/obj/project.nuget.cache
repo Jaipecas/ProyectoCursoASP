@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V0G6ZSJrzQrIB1saW8XxpWFMd7LVLqGBxvzVdX0gklhYpOCpO+whOVLOUhkxP8ItjjqGdR8Tm7dmmg/SwX8uKw==",
+  "dgSpecHash": "jmHnglPDHYoVF7rp0+eYGpi4LcWnF3wC9fDduGbxyVOdx0CBc/+QAo6kKyTxxmE6Ih2osFuhUPzbu8IW0mmV2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\CopiaProyectoCursoASP\\ProyectoCursoASP\\webAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaipe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
