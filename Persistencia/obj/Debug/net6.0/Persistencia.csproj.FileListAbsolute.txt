@@ -1,4 +1,5 @@
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\bin\Debug\net6.0\Persistencia.deps.json
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\bin\Debug\net6.0\Persistencia.runtimeconfig.json
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\bin\Debug\net6.0\Persistencia.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\bin\Debug\net6.0\Persistencia.pdb
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\bin\Debug\net6.0\Dominio.dll
@@ -12,6 +13,5 @@ C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\Debug\net6.0\Persistencia.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\Debug\net6.0\refint\Persistencia.dll
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\Debug\net6.0\Persistencia.pdb
-C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\Debug\net6.0\ref\Persistencia.dll
-C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\bin\Debug\net6.0\Persistencia.runtimeconfig.json
 C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\Debug\net6.0\Persistencia.genruntimeconfig.cache
+C:\Users\jaipe\Documents\VisualStudioProjects\ProyectoCursoASP\Persistencia\obj\Debug\net6.0\ref\Persistencia.dll

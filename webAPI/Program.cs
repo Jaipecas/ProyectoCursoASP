@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using Persistencia;
 using Persistencia.DapperConnection;
+using Persistencia.DapperConnection.Instructor;
 using Seguridad;
 using Seguridad.Token;
 using System.Text;
@@ -29,7 +30,11 @@ builder.Services.AddDbContext<CursosOnlineContext>(opt =>
 });
 
 // Conexion Dapper para manejar los procedimientos almacenados
-builder.Services.Configure<ConnectionConf>(builder.Configuration.GetSection("DefaultConnection"));
+builder.Services.AddOptions();
+// Aqui se mapea el apartado connectionsStrings y se mete en nuestro objeto ConnectionConf
+builder.Services.Configure<ConnectionConf>(builder.Configuration.GetSection("ConnectionStrings"));
+builder.Services.AddTransient<IFactoryConnection, FactoryConnection>();
+builder.Services.AddScoped<IInstructores, InstructorRepositorio>();
 
 
 builder.Services.AddMediatR(typeof(GetCursosQueryHandler).Assembly);
@@ -89,7 +94,7 @@ using (var ambiente = app.Services.CreateScope())
         var userManager = services.GetRequiredService<UserManager<Usuario>>();
         var context = services.GetRequiredService<CursosOnlineContext>();
         context.Database.Migrate();
-        DataPrueba.insertarData(context, userManager).Wait();
+        //DataPrueba.insertarData(context, userManager).Wait();
     }
     catch (Exception e)
     {

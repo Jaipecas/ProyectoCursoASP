@@ -8,12 +8,12 @@ namespace Persistencia.DapperConnection
 {
     public class FactoryConnection : IFactoryConnection
     {
-        private IDbConnection? _connection;
-        private readonly IOptions<ConnectionConf>? _options;
+        private IDbConnection _connection;
+        private readonly IOptions<ConnectionConf> _options;
 
-        public FactoryConnection(IDbConnection connection)
+        public FactoryConnection(IOptions<ConnectionConf> options)
         {
-            _connection = connection;   
+            _options = options;
         }
         public void CloseConnection()
         {
@@ -25,7 +25,7 @@ namespace Persistencia.DapperConnection
 
         public IDbConnection GetDbConnection()
         {
-            _connection ??= new SqlConnection(_options.Value.ConnectionString);
+            _connection ??= new SqlConnection(_options.Value.DefaultConnection);
 
             if (_connection.State != ConnectionState.Open) _connection.Open();
           

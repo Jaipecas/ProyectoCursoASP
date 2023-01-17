@@ -117,10 +117,10 @@ namespace Persistencia.Migrations
                     b.Property<Guid>("cursoId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal>("precioActual")
+                    b.Property<decimal?>("precioActual")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal>("promocion")
+                    b.Property<decimal?>("promocion")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("precioId");

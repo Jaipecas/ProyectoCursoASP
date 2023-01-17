@@ -4,7 +4,8 @@
       "commandName": "Project"
     },
     "Perfil 1": {
-      "commandName": "Executable"
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\jaipe\\Documents\\VisualStudioProjects\\ProyectoCursoASP\\webAPI\\bin\\Debug\\net6.0\\WebAPI.exe"
     }
   }
 }

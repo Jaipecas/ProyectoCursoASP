@@ -30,7 +30,6 @@ namespace App.Cursos.Queries
                 .ToListAsync();
 
             var cursosDTO = _mapper.Map<List<Curso>, List<CursoDTO>>(cursos);
-
             return cursosDTO;
         }
     }
